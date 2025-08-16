@@ -1,0 +1,39 @@
+# Alacritty Configuration File
+import = [
+  # uncomment the flavour you want below:
+  # "~/.config/alacritty/dracula.toml"
+  "~/.config/alacritty/github_dark.toml"
+  # "~/.config/alacritty/catppuccin-latte.toml"
+  # "~/.config/alacritty/catppuccin-frappe.toml"
+  # "~/.config/alacritty/catppuccin-macchiato.toml"
+  #  "~/.config/alacritty/catppuccin-mocha.toml"
+  # "~/.config/alacritty/tokyo-night.toml"
+  # "~/.config/alacritty/tokyo-night-storm.toml"
+  # "~/.config/alacritty/tokyonight_day.toml"
+  # "~/.config/alacritty/tokyonight_moon.toml"
+  #"~/.config/alacritty/tokyonight_night.toml"
+  
+]
+
+# Window settings
+[window]
+decorations = "none"  # Remove window decorations
+opacity = 0.75       # Set background opacity
+padding = { x = 20, y = 20 }  # Set padding
+
+# Font settings
+[font]
+normal = { family = "MesloLGS NF", style = "Bold" }
+size = 12.0  # Set font size
+
+# Cursor settings
+[cursor]
+style = { shape = "Block", blinking = "Always" }
+
+# Selection settings
+[selection]
+save_to_clipboard = true  # Enable clipboard support
+
+# Shell settings
+[env]
+SHELL = "/usr/bin/fish"
