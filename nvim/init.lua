@@ -169,6 +169,8 @@ cmp.setup({
 
 -- LSP config
 
+-- Lua
+require("lsps.lua_ls")
 -- Rust
 require("lsps.rust")
 -- Go
