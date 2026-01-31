@@ -150,6 +150,17 @@ vim.keymap.set("n", "<leader>q", ":q<CR>")
 -- Clear search highlight
 vim.keymap.set("n", "<leader>h", ":nohlsearch<CR>")
 
+-- Use system clipboard for all yank, delete, change, and paste
+vim.opt.clipboard = "unnamedplus"
+
+-- Optional: highlight text on yank (nice visual feedback)
+vim.api.nvim_create_autocmd("TextYankPost", {
+  pattern = "*",
+  callback = function()
+    vim.highlight.on_yank({ higroup = "Visual", timeout = 200 })
+  end,
+})
+
 
 -- Nvim-Cmp config
 local cmp = require("cmp")
