@@ -188,3 +188,7 @@ require("lsps.rust")
 require("lsps.go")
 -- Zig
 require("lsps.zig")
+-- clangd
+require("lsps.clangd")
+-- Typescript
+require("lsps.ts")
