@@ -182,6 +182,8 @@ cmp.setup({
 
 -- Lua
 require("lsps.lua_ls")
+-- Python--
+require("lsps.python")
 -- Rust
 require("lsps.rust")
 -- Go
@@ -192,3 +194,5 @@ require("lsps.zig")
 require("lsps.clangd")
 -- Typescript
 require("lsps.ts")
+-- Haskell--
+require("lsps.haskell")
